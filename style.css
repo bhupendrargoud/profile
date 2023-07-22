@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*navbar*/
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: black;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: lime;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: white;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: lime;
+}
+.navbar.sticky .menu li a:hover{
+    color: white;
+}
+
+/*menu btn*/
+
+.menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: black;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*home section*/
+
+.home{
+    display: flex;
+    background: url("mypictures/myblogbg.jpeg") no-repeat center;
+    height:100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    color: lime;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 27px;
+    margin: 5px 0;
+}
+.home .home-content .text-4 span{
+    font-size: 45px;
+    color: lime;
+    font-weight: 600;
+}
+
+/*all similar content code*/
+
+section{
+    padding: 100px 0;
+}
+.about, .images, .videos, .admin, .skills, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.images .images-content,
+.videos .videos-content,
+.admin .admin-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: lime;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+/*about section*/
+
+.about .title::after{
+     content: "who i am";
+ }
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: lime;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+
+/*project section*/
+
+.submit-btn
+{
+	width: 10%;
+    height: 50px;
+	cursor: pointer;
+	margin: auto;
+	background-color:rgb(211, 211, 211);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+    border-color: aqua;
+}
+
+.project .title::after{
+    content: "what i know";
+}
+.project .project-content .column{
+    width: calc(50% - 30px);
+}
+.project .project-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.project .project-content .left p{
+    text-align: justify;
+}
+.project .project-content .right .bars{
+    margin-bottom: 15px;
+}
+.project .project-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.project .project-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.project .project-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.project .project-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #0484f8;
+}
+.project-content .right .html::before{
+    width: 90%;
+}
+.project-content .right .css::before{
+    width: 60%;
+}
+.project-content .right .js::before{
+    width: 80%;
+}
+.project-content .right .php::before{
+    width: 50%;
+}
+.project-content .right .mysql::before{
+    width: 70%;
+}
+
+
+/*skills section*/
+
+.skills .title::after{
+    content: "what i know";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #0484f8;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+
+/*contact section*/
+
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px  0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: #0484f8;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: black;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .e-mail{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #0484f8;
+    background: #0484f8;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: #0484f8;
+    background: none;
+}
+
+/*footer section*/
+
+footer{
+    text-align: center;
+    background: black;
+    padding: 20px 23px;
+    color: white;
+}
+footer span a{
+    color: lime;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+/*responsive media query*/
+
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .admin .admin-content .column,
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 3px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+}
+@media (max-width: 500px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Experience Section */
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .experience {
+    flex: 0 0 calc(50% - 20px);
+    background-color: #EFEFEF;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    animation: fadeInUp 1s;
+  }
+
+  .experience h2 {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+
+  .experience ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .experience li {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 4px;
+  }
+
+  /* Colorful Styles */
+  .company1 {
+    background-color: #FF8484;
+  }
+
+  .company2 {
+    background-color: #FFC788;
+  }
+
+  .company3 {
+    background-color: #FFF088;
+  }
+
+  .company4 {
+    background-color: #88FF88;
+  }
+
+  .company5 {
+    background-color: #88FFDF;
+  }
+
+  .company6 {
+    background-color: #88C3FF;
+  }
+
+  /* Clear float to prevent layout issues */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Hover Effect */
+.experience:hover {
+    background-color: #FFD700; /* Change to your desired hover color */
+    transform: scale(1.05); /* Add a slight scale effect */
+    transition: background-color 0.3s, transform 0.3s; /* Add smooth transition */
+  }
+  .download-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff; /* Change this to your preferred button color */
+    color: #ffffff; /* Change this to your preferred button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  /* Hover effect */
+.download-button:hover {
+  background-color: #0056b3; /* Change this to the hover color you prefer */
+}
+
+/* Optional: Add box-shadow for a raised effect */
+.download-button {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap value as needed */
+    animation: popUpAnimation 1s ease-in-out;
+    opacity: 0;
+  }
+  
+  .logo-container.show {
+    opacity: 1;
+  }
+  
+  .logo {
+    max-width: 50px; /* Reduce the size of the logo to a maximum width of 100 pixels */
+    height: auto;
+  }
+  
+  /* Keyframes for the pop-up animation */
+  @keyframes popUpAnimation {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
