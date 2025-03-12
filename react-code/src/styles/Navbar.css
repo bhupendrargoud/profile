@@ -1,0 +1,50 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: transparent;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+  
+  .navbar.sticky {
+    background: #007bff;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .menu.active {
+      display: block;
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  }
+  
