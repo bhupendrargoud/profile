@@ -29,7 +29,7 @@ $(document).ready(function(){
 //typing animation
 
 var typed = new Typed(".typing", {
-    strings: ["AWS Solution Architect!","DevOps Engineer!","Java Developer!", "Freelancer!"],
+    strings: ["Platform Engineer!", "AWS Solution Architect!","DevOps Engineer!", "Freelancer!"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
