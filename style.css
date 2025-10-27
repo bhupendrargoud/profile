@@ -569,6 +569,10 @@ footer span a:hover{
   }
 
   /* Colorful Styles */
+  .companycurrent
+  {
+    background-color: #88FF88;
+  }
   .company1 {
     background-color: #FF8484;
   }
@@ -582,7 +586,7 @@ footer span a:hover{
   }
 
   .company4 {
-    background-color: #88FF88;
+    background-color: #b4f3b4;
   }
 
   .company5 {
@@ -591,6 +595,13 @@ footer span a:hover{
 
   .company6 {
     background-color: #88C3FF;
+  }
+
+  .company7 {
+      background-color: #ddf5b0;
+  }
+  .company8 {
+      background-color: #fa9df5;
   }
 
   /* Clear float to prevent layout issues */
