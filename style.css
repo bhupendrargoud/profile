@@ -520,6 +520,51 @@ section .title::after{
     border: 1px solid #a5d6a7;
 }
 
+/* Highlight Cards (Freelance & Training) */
+.highlight-card{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: clamp(12px, 2vw, 18px);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.highlight-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+.highlight-card i{
+    font-size: clamp(20px, 2vw, 28px);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+.highlight-card h4{
+    font-size: clamp(14px, 1.4vw, 17px);
+    margin-bottom: 4px;
+    color: #222;
+}
+.highlight-card p{
+    font-size: clamp(12px, 1.1vw, 14px);
+    color: #666;
+    line-height: 1.5;
+}
+.highlight-card.freelance{
+    background: #fff8f0;
+    border-left: 4px solid #ff9800;
+}
+.highlight-card.freelance i{
+    color: #ff9800;
+}
+.highlight-card.training{
+    background: #faf0ff;
+    border-left: 4px solid #9c27b0;
+}
+.highlight-card.training i{
+    color: #9c27b0;
+}
+
 /*contact section*/
 
 .certs .title::after{
