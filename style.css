@@ -356,6 +356,8 @@ section .title::after{
 .timeline-item:nth-child(3){ animation-delay: 0.2s; }
 .timeline-item:nth-child(4){ animation-delay: 0.3s; }
 .timeline-item:nth-child(5){ animation-delay: 0.4s; }
+.timeline-item:nth-child(6){ animation-delay: 0.5s; }
+.timeline-item:nth-child(7){ animation-delay: 0.6s; }
 .timeline-dot{
     position: absolute;
     left: -26px;
@@ -387,6 +389,14 @@ section .title::after{
 }
 .timeline-item.current .timeline-card{
     border-left-color: lime;
+}
+.timeline-card.freelance{
+    border-left-color: #ff9800;
+    background: #fff8f0;
+}
+.timeline-card.training{
+    border-left-color: #9c27b0;
+    background: #faf0ff;
 }
 .timeline-card:hover{
     transform: translateX(5px);
