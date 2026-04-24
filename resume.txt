@@ -1,0 +1,103 @@
+Bhupendra R
+Email: bhupendrargoud@gmail.com Mob: 9113009973
+Portfolio: https://bhupendrargoud.github.io/profile LinkedIn: https://www.linkedin.com/in/bhupendrargoud Bangalore KA 560089
+
+Software Engineer with a strong background in DevOps, Kubernetes, cloud platforms, Go, and Java full stack engineering. Brings 5+ years of experience in designing, migrating, and implementing scalable cloud solutions. Certified AWS Solution Architect, Oracle Architect Associate, Microsoft AZ 900, and JLPT N4, with hands on expertise in DevOps practices, multi cloud deployments, Crossplane systems, Kubernetes administration, and full stack development. Proven ability to design efficient, secure cloud architectures aligned with business needs.
+ 
+Skills
+DevOps
+•	Cross plane v2.0
+•	Helm file
+•	Automation scripts
+•	Kubernetes ,Helm chart
+•	Jenkins , Argo CI CD
+•	Argo Workflows and crons
+•	Signoz, Grafana, signalFx
+•	Git Hub ,Bit bucket
+•	Docker , Kaninko
+Cloud
+•	AWS EC2, IAM,VPC,S3,EKS, etc
+•	Azure VM,AKS,VPS,EntraID,etc
+•	Vulture VKE
+•	Terraforms
+•	Aws cloud formation
+•	Disaster Recovery
+
+Programming
+•	Go lang
+•	Go scripting
+•	Java full stack
+•	Go scripting
+•	Python
+•	ReactJs, NodeJs
+•	Java Script
+•	PLC Programming
+ 
+Experience
+Senior software engineer Mar 2025 – Present
+Nike (Tek systems global services)
+•	Airlift Development and deployment (AI Migration tool)
+•	CloudRed provider Development and Platform Governance
+•	Cross plane implementation (Network control plane)
+•	Cloudred migration (Nike managed account)
+•	Jira Scrum
+Projects:
+Nike (Infra engineering)
+Migrated Cloud Red to a Nike-managed account by converting all microservices and dependencies into Crossplane Managed Resources (MR), collaborating with global teams for seamless integration.
+Platform Engineer June 2024 – Feb 2025
+Vananam Private Ltd
+•	Multi-cloud and Kubernetes administration
+•	Automating scripts using Argo templates and Python libraries
+•	Developed an IP whitelisting middle ware using Go lang
+•	Cross cluster deployments, (CI/CD) pipeline implementation
+•	DNS management and automation of subdomains
+•	Automated system backup and recovery for RPO and RTO
+Projects:
+The Reward Store (Product & SAAS)
+Designed and built the entire infrastructure on a multi-cloud environment. Managed microservices across multiple Kubernetes clusters.
+
+DevOps Consultant January 2024 – April 2024
+Gavika information Technologies
+•	Architecting the cloud solution according to client requirements (AWS cloud partner)
+Projects:
+Alura & Liestung
+Architected and deployed a PaaS (Platform-as-a-Service)
+solution for the client on AWS using Terraform. Integration of AWS services to ensuring scalability, security.
+ 
+Certificates
+Amazon web services
+•	SAA-C03
+•	AWS Partner: Accreditation (Technical)
+•	Cloud Practitioner
+Azure cloud
+•	AZ-900
+Oracle cloud
+•	OCI Architect
+Japanese Language
+•	JLPT N4
+•	JLPT N5
+
+Education
+Bachelor of Engineering (2021) Sri Krishna Institute of Technology (SKIT) Bangalore
+ 
+
+
+
+AWS Solution architect December 2022 - December 2023
+Pi Square Technologies
+•	Designing and architecting solutions using various AWS services.
+•	Cloud Infrastructure Management
+•	JLPT N5 ,N4 ,N3 proficiency
+•	Disaster Recovery and High Availability
+Projects:
+Multi-Tier Application
+Designed and implemented a multi-tier application architecture using AWS managed services. Built a CI/CD pipeline to automate deployments.
+Associate Software Engineer	Nov 2021 – Aug 2022
+Torry Harris Business Solutions
+•	Collaborating with Teams development, operations, and testing teams
+•	Developing and maintaining automation scripts
+Projects:
+Oracle serial bus
+Containerized the application using Docker and orchestrated deployment with Kubernetes. Designed and implemented a CI/CD pipeline to automate builds, testing, and deployment
+
+

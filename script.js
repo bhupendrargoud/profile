@@ -29,13 +29,13 @@ $(document).ready(function(){
 //typing animation
 
 var typed = new Typed(".typing", {
-    strings: ["Platform Engineer!", "AWS Solution Architect!","DevOps Engineer!", "Freelancer!"],
+    strings: ["Senior Software Engineer!", "Platform Engineer!", "AWS Solution Architect!", "DevOps Engineer!"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
 });
 var typed2 = new Typed(".typing-2", {
-    strings: ["AWS Solution Architect!","DevOps Engineer!","Java Developer!", "Freelancer!"],
+    strings: ["AWS Solution Architect!", "DevOps Engineer!", "Go & Java Developer!", "Kubernetes Admin!"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
