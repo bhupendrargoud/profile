@@ -139,8 +139,17 @@ html{
 section{
     padding: clamp(40px, 8vw, 100px) 0;
 }
-.about, .images, .videos, .admin, .skills, .certs, .contact, footer{
-    font-family: 'Poppins', sans-serif;
+.about{
+    background: #ffffff;
+}
+.skills{
+    background: #f5f7fa;
+}
+.certs{
+    background: #ffffff;
+}
+.contact{
+    background: #f5f7fa;
 }
 .about .about-content,
 .images .images-content,
@@ -293,6 +302,7 @@ section .title::after{
 
 .skills .title::after{
     content: "what i know";
+    background: #f5f7fa;
 }
 .skills .skills-content{
     display: flex;
@@ -509,6 +519,7 @@ section .title::after{
 
 .contact .title::after{
     content: "get in touch";
+    background: #f5f7fa;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
