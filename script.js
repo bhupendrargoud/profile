@@ -44,4 +44,16 @@ var typed2 = new Typed(".typing-2", {
 window.onload = function() {
     var logoContainer = document.querySelector('.logo-container');
     logoContainer.classList.add('show');
-  };
+};
+
+function toggleExperience() {
+    var timeline = document.querySelector('.timeline');
+    var btn = document.querySelector('.toggle-exp-btn');
+    timeline.classList.toggle('expanded');
+    btn.classList.toggle('expanded');
+    if (timeline.classList.contains('expanded')) {
+        btn.innerHTML = '<i class="fas fa-chevron-up"></i> Show Less';
+    } else {
+        btn.innerHTML = '<i class="fas fa-chevron-down"></i> Show More';
+    }
+}
