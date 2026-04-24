@@ -8,6 +8,22 @@
 html{
     scroll-behavior: smooth;
 }
+/* Global link styles */
+a{
+    color: #0484f8;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: #025bb5;
+}
+/* Section fade-in on load */
+section{
+    animation: sectionFadeIn 0.8s ease both;
+}
+@keyframes sectionFadeIn{
+    from{ opacity: 0; transform: translateY(20px); }
+    to{ opacity: 1; transform: translateY(0); }
+}
 .max-width{
     max-width: 1300px;
     padding: 0 clamp(15px, 4vw, 80px);
@@ -95,6 +111,10 @@ html{
     opacity: 1;
     pointer-events: auto;
 }
+.scroll-up-btn:hover{
+    background: lime;
+    color: black;
+}
 
 /*home section*/
 
@@ -110,10 +130,20 @@ html{
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
     padding: 0 clamp(15px, 4vw, 80px);
+    position: relative;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
 }
 .home .max-width{
     width: 100%;
     margin: auto 0;
+    position: relative;
+    z-index: 1;
 }
 .home .home-content .text-1{
     font-size: clamp(16px, 2.5vw, 27px);
@@ -207,7 +237,13 @@ section .title::after{
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.about .about-content .left img:hover{
+    transform: scale(1.03);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
 }
 .about .about-content .right{
     width: 55%;
@@ -647,6 +683,12 @@ section .title::after{
     color: #0484f8;
     flex-shrink: 0;
 }
+.contact .contact-content .row .fa-whatsapp{
+    color: #25d366;
+}
+.contact .contact-content .row .fa-linkedin{
+    color: #0077b5;
+}
 .contact .contact-content .info .head{
     font-weight: 500;
     font-size: clamp(14px, 1.3vw, 16px);
@@ -715,10 +757,11 @@ section .title::after{
 
 footer{
     text-align: center;
-    background: black;
-    padding: clamp(12px, 2vw, 20px) clamp(10px, 2vw, 23px);
-    color: white;
+    background: #111;
+    padding: clamp(15px, 2vw, 25px) clamp(10px, 2vw, 23px);
+    color: #aaa;
     font-size: clamp(12px, 1.2vw, 16px);
+    border-top: 3px solid lime;
 }
 footer span a{
     color: lime;
@@ -891,6 +934,8 @@ footer span a:hover{
 
 .download-button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Certification logos in about section */
