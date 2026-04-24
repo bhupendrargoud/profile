@@ -34,7 +34,7 @@ var typed = new Typed(".typing", {
     backSpeed: 60,
     loop: true
 });
-var typed = new Typed(".typing-2", {
+var typed2 = new Typed(".typing-2", {
     strings: ["AWS Solution Architect!","DevOps Engineer!","Java Developer!", "Freelancer!"],
     typeSpeed: 100,
     backSpeed: 60,
