@@ -24,6 +24,12 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+
+    // close mobile menu on link click
+    $('.menu-link').click(function(){
+        $('.navbar .menu').removeClass("active");
+        $('.menu-btn i').removeClass("active");
+    });
 });
 
 //typing animation
