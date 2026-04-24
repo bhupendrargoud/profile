@@ -613,15 +613,15 @@ footer span a:hover{
     background-color: #0056b3;
 }
 
-/* Logo container */
+/* Certification logos in about section */
 .logo-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: clamp(5px, 1.5vw, 15px);
+    gap: clamp(8px, 1.5vw, 15px);
+    margin: 20px 0;
     animation: popUpAnimation 1s ease-in-out;
     opacity: 0;
-    padding: 0 clamp(10px, 3vw, 40px);
 }
 
 .logo-container.show {
@@ -629,9 +629,10 @@ footer span a:hover{
 }
 
 .logo-container img {
-    width: clamp(100px, 15vw, 200px) !important;
+    width: clamp(80px, 12vw, 150px) !important;
     height: auto !important;
     object-fit: contain;
+    border-radius: 6px;
 }
 
 @keyframes popUpAnimation {
