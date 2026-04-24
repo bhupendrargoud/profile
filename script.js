@@ -63,3 +63,15 @@ function toggleExperience() {
         btn.innerHTML = '<i class="fas fa-chevron-down"></i> Show More';
     }
 }
+
+function toggleProjects() {
+    var grid = document.querySelector('.projects-content');
+    var btn = document.querySelector('.toggle-proj-btn');
+    grid.classList.toggle('expanded');
+    btn.classList.toggle('expanded');
+    if (grid.classList.contains('expanded')) {
+        btn.innerHTML = '<i class="fas fa-chevron-up"></i> Show Less';
+    } else {
+        btn.innerHTML = '<i class="fas fa-chevron-down"></i> Show More Projects';
+    }
+}

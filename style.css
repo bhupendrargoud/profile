@@ -351,6 +351,37 @@ section .title::after{
         grid-column: auto;
     }
 }
+.project-card.hidden-project{
+    display: none;
+}
+.projects-content.expanded .project-card.hidden-project{
+    display: flex;
+}
+.toggle-proj-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    background: transparent;
+    color: #0484f8;
+    border: 2px solid #0484f8;
+    border-radius: 20px;
+    font-size: clamp(13px, 1.2vw, 15px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.toggle-proj-btn:hover{
+    background: #0484f8;
+    color: white;
+}
+.toggle-proj-btn i{
+    transition: transform 0.3s ease;
+}
+.toggle-proj-btn.expanded i{
+    transform: rotate(180deg);
+}
 
 /*skills section*/
 
