@@ -35,13 +35,13 @@ $(document).ready(function(){
 //typing animation
 
 var typed = new Typed(".typing", {
-    strings: ["Senior Software Engineer!", "Platform Engineer!", "AWS Solution Architect!", "DevOps Engineer!"],
+    strings: ["Agentic AI Engineer!", "Platform Engineer!", "AWS Solution Architect!", "DevOps Engineer!"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
 });
 var typed2 = new Typed(".typing-2", {
-    strings: ["AWS Solution Architect!", "DevOps Engineer!", "Go & Java Developer!", "Kubernetes Admin!"],
+    strings: ["AWS Solution Architect!", "DevOps Engineer!", "Agentic AI Engineer!", "Go & Java Developer!", "Kubernetes Admin!"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
